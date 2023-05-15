@@ -18,7 +18,6 @@ const isrouteName = ref()
 const router = useRouter()
 
 const listNoShowSideBar = Object.values(ROUTER_NAME_AUTHENTICATION)
-console.log(listNoShowSideBar)
 
 watchEffect(() => {
   isrouteName.value = listNoShowSideBar.includes(router.currentRoute.value.name) ? false : true

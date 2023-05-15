@@ -2,8 +2,7 @@ import type { AxiosInstance, AxiosRequestConfig, AxiosResponse } from 'axios'
 import axios from 'axios'
 import mapApis from './apiMap'
 
-const BASE_URL = 'http://127.0.0.1:8081/api/'
-
+const BASE_URL = `${import.meta.env.VITE_VUE_APP_DOMAIN}${import.meta.env.VITE_VUE_APP_API_VERSION}`
 const request: AxiosInstance = axios.create({
   baseURL: BASE_URL,
   responseType: 'json'
