@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import LoginForm from '../views/Authentication/loginForm.vue'
+import { ROUTER_NAME_AUTHENTICATION } from '@/constant/index'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),

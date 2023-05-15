@@ -11,7 +11,7 @@ export const useAuthenStore = defineStore('authen', {
   actions: {
     async login(payload: any) {
       try {
-        const res = await api('login', payload)
+        const res: any = await api('login', payload)
         if (res.success) {
           return res
         }
