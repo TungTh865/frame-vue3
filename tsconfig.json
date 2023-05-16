@@ -13,6 +13,8 @@
    
   ],
   "compilerOptions": {
+    "ignoreDeprecations": ["importsNotUsedAsValues"],
+    "verbatimModuleSyntax": true,
     "target": "esnext",
     "module": "esnext",
     "moduleResolution": "node",
