@@ -1,19 +1,19 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import LoginForm from '../views/Authentication/loginForm.vue'
-import { ROUTER_NAME_AUTHENTICATION } from '@/constant/index'
+import { ROUTER_NAME_AUTHENTICATION, ROUTER_NAME_PAGE } from '@/constant/index'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
-      name: 'home',
+      name: ROUTER_NAME_PAGE.HOME,
       component: HomeView
     },
     {
       path: '/login',
-      name: 'login',
+      name: ROUTER_NAME_AUTHENTICATION.LOGIN,
       component: LoginForm
     }
   ]

@@ -1,0 +1,6 @@
+# .eslintignore
+node_modules/
+dist/
+*.js
+*.d.ts
+!/src/

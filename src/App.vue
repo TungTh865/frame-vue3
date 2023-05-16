@@ -20,7 +20,8 @@ const router = useRouter()
 const listNoShowSideBar = Object.values(ROUTER_NAME_AUTHENTICATION)
 
 watchEffect(() => {
-  isrouteName.value = listNoShowSideBar.includes(router.currentRoute.value.name) ? false : true
+  const nameRouter = router?.currentRoute?.value?.name?.toString() || ''
+  isrouteName.value = listNoShowSideBar.includes(nameRouter) ? false : true
 })
 </script>
 <style scoped>
